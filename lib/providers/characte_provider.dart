@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_api/data/service.dart';
+import 'package:harry_potter_api/data/api_service.dart';
 import 'package:harry_potter_api/models/character.dart';
 
 class CharacterProvider extends ChangeNotifier{
@@ -19,7 +19,7 @@ class CharacterProvider extends ChangeNotifier{
       _characters.addAll(characters);
       notifyListeners();
     } catch (e) {
-      throw Exception('Karakterleri getirirken hata oluştu: $e');
+      throw Exception('Error fetching characters: $e');
     }finally{
       _isLoading = false;
       notifyListeners();

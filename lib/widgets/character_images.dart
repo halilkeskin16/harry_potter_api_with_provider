@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:harry_potter_api/core/const/image_constants.dart';
 class CharacterImage extends StatelessWidget {
   final String imageUrl;
-  final double size;
+  final double width;
+  final double height;
 
   const CharacterImage({
     super.key,
     required this.imageUrl,
-    this.size = 60,
+    this.width = 50.0,
+    this.height = 70.0,
   });
 
   @override
@@ -17,15 +19,15 @@ class CharacterImage extends StatelessWidget {
 
     return CachedNetworkImage(
       imageUrl: isValid ? imageUrl : ImageConstants.defaultCharacter,
-      width: size,
-      height: size,
+      width: width,
+      height: height,
       fit: BoxFit.cover,
       placeholder: (context, url) =>
           const CircularProgressIndicator(strokeWidth: 2),
       errorWidget: (context, url, error) => Image.network(
         ImageConstants.defaultCharacter,
-        width: size,
-        height: size,
+        width: width,
+        height: height,
         fit: BoxFit.cover,
       ),
     );

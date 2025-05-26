@@ -14,7 +14,7 @@ class CharacterService {
       final data = response.data as List;
       return data.map((e) => Character.fromJson(e)).toList();
     } catch (e) {
-      throw Exception('Karakterleri getirirken hata oluştu: $e');
+      throw Exception('Error fetching characters: $e');
     }
   }
 }
