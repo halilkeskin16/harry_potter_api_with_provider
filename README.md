@@ -20,9 +20,13 @@ Bu Flutter uygulaması, **Harry Potter evrenine ait karakterleri** bir REST API 
 
 ## 🖼️ Ekran Görüntüleri
 
-| Mobil Görünüm | Masaüstü Görünüm |
-|---------------|------------------|
-| ![mobile](screenshots/mobile_view.png) | ![desktop](screenshots/desktop_view.png) |
+### 📱 Mobil Görünüm
+
+![Mobil](screenshots/mobile_view.png)
+
+### 🖥️ Masaüstü Görünüm
+
+![Masaüstü](screenshots/desktop_view.png)
 
 ---
 
