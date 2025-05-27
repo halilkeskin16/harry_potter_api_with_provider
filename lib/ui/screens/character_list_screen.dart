@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_api/data/providers/characte_provider.dart';
+import 'package:harry_potter_api/data/providers/character_provider.dart';
 import 'package:harry_potter_api/ui/widgets/character_grid_card.dart';
 import 'package:harry_potter_api/ui/widgets/character_list_card.dart';
 import 'package:provider/provider.dart';
