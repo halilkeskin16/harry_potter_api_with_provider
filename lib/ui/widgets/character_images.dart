@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:harry_potter_api/core/const/image_constants.dart';
+import 'package:harry_potter_api/core/constant/image_constant.dart';
 class CharacterImage extends StatelessWidget {
   final String imageUrl;
   final double width;

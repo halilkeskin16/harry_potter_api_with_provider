@@ -1,5 +1,5 @@
 
-import 'package:harry_potter_api/models/wand.dart';
+import 'package:harry_potter_api/data/models/wand.dart';
 
 class Character {
   final String id;

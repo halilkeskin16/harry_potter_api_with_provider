@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_api/providers/characte_provider.dart';
-import 'package:harry_potter_api/screens/character_list_screen.dart';
+import 'package:harry_potter_api/data/providers/characte_provider.dart';
+import 'package:harry_potter_api/ui/screens/character_list_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {

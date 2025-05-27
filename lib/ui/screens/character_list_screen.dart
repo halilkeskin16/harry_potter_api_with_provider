@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_api/providers/characte_provider.dart';
-import 'package:harry_potter_api/widgets/character_images.dart';
+import 'package:harry_potter_api/data/providers/characte_provider.dart';
+import 'package:harry_potter_api/ui/widgets/character_images.dart';
 import 'package:provider/provider.dart';
 
 class CharacterListScreen extends StatefulWidget {

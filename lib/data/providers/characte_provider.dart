@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_api/data/api_service.dart';
-import 'package:harry_potter_api/models/character.dart';
+import 'package:harry_potter_api/data/services/api_service.dart';
+import 'package:harry_potter_api/data/models/character.dart';
 
 class CharacterProvider extends ChangeNotifier{
   final CharacterService _characterService = CharacterService();

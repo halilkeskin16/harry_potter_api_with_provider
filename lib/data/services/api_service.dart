@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:harry_potter_api/core/const/api_constanse.dart';
-import '../../models/character.dart';
+import 'package:harry_potter_api/core/constant/api_constant.dart';
+import '../models/character.dart';
 
 class CharacterService {
   final Dio _dio = Dio(BaseOptions(
