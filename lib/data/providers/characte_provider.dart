@@ -6,9 +6,11 @@ class CharacterProvider extends ChangeNotifier{
   final CharacterService _characterService = CharacterService();
   final List<Character> _characters = [];
   bool _isLoading = false;
+  String? _errorMessage;
 
   List<Character> get characters => _characters;
   bool get isLoading => _isLoading;
+  String? get errorMessage => _errorMessage;
 
 
   Future<void> fetchCharacters() async {
@@ -19,7 +21,7 @@ class CharacterProvider extends ChangeNotifier{
       _characters.addAll(characters);
       notifyListeners();
     } catch (e) {
-      throw Exception('Error fetching characters: $e');
+      _errorMessage = e.toString();
     }finally{
       _isLoading = false;
       notifyListeners();

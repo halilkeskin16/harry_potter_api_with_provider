@@ -25,6 +25,14 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
   Widget build(BuildContext context) {
     final provider = context.watch<CharacterProvider>();
 
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (provider.errorMessage != null && provider.errorMessage!.isNotEmpty) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(provider.errorMessage! , style: const TextStyle(color: Colors.red))),
+        );
+      }
+    });
+
     return LayoutBuilder(
       builder: (context, constraints) {
         bool isMobile = constraints.maxWidth < 600;
