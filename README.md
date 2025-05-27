@@ -2,7 +2,9 @@
 ````markdown
 # 🪄 Harry Potter Karakter Uygulaması
 
-Bu Flutter uygulaması, **Harry Potter evrenine ait karakterleri** bir REST API üzerinden çekip kullanıcıya şık bir arayüz ile sunar. Uygulama mobil ve masaüstü cihazlara duyarlı olup, Provider ile yönetilen sade ve güçlü bir mimariye sahiptir.
+Bu Flutter uygulaması, **Harry Potter evrenine ait karakterleri** bir REST API üzerinden çekip
+kullanıcıya şık bir arayüz ile sunar. Uygulama mobil ve masaüstü cihazlara duyarlı olup,
+Provider ile yönetilen sade ve güçlü bir mimariye sahiptir.
 
 ---
 
