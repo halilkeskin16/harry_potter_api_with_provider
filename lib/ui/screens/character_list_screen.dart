@@ -36,7 +36,6 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
     return LayoutBuilder(
       builder: (context, constraints) {
         bool isMobile = constraints.maxWidth < 600;
-        print('Screen width: ${constraints.maxWidth}, isMobile: $isMobile');
         return isMobile
             ? _buildMobileLayout(provider)
             : _buildDesktopLayout(provider , constraints.maxWidth);
