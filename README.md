@@ -1,105 +1,68 @@
+# 🪄 Harry Potter Characters App
 
-````markdown
-# 🪄 Harry Potter Karakter Uygulaması
-
-Bu Flutter uygulaması, **Harry Potter evrenine ait karakterleri** bir REST API üzerinden çekip
-kullanıcıya şık bir arayüz ile sunar. Uygulama mobil ve masaüstü cihazlara duyarlı olup,
-Provider ile yönetilen sade ve güçlü bir mimariye sahiptir.
+This Flutter application fetches **characters from the Harry Potter universe** via a REST API and presents them to the user with a stylish interface. The application is responsive for mobile and desktop devices and features a simple yet powerful architecture managed with Provider.
 
 ---
 
-## ✨ Özellikler
+## ✨ Features
 
-- ✅ Karakter verilerini API üzerinden dinamik olarak çeker
-- ✅ Mobilde `ListView`, masaüstünde `GridView` ile duyarlı (responsive) yapı
-- ✅ Hataları kullanıcıya SnackBar ile bildirir, uygulama çökmez
-- ✅ `Provider` ile state yönetimi
-- ✅ API isteği sırasında yükleniyor animasyonu gösterir
-- ✅ Pull-to-refresh (yukarı çekerek yenileme) desteği
-- ✅ `CharacterCard` ve `CharacterGridCard` gibi modüler bileşenler
+- ✅ Dynamically fetches character data from an API
+- ✅ Responsive layout with `ListView` on mobile and `GridView` on desktop
+- ✅ Notifies the user of errors via a SnackBar without crashing the app
+- ✅ State management with `Provider`
+- ✅ Displays a loading animation during API requests
+- ✅ Pull-to-refresh support
+- ✅ Modular components like `CharacterCard` and `CharacterGridCard`
 
----
+## 🚀 Setup
 
-## 🖼️ Ekran Görüntüleri
+### Prerequisites
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.x or higher)
+- An IDE (VS Code, Android Studio, etc.)
 
-### 📱 Mobil Görünüm
-
-![Mobil](screenshots/mobile_view.png)
-
-### 🖥️ Masaüstü Görünüm
-
-![Masaüstü](screenshots/desktop_view.png)
-
----
-
-## 🚀 Kurulum
-
-### Gereksinimler
-
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.x veya üstü)
-- Bir IDE (VS Code, Android Studio vb.)
-
-### Projeyi çalıştırmak için
-
+### To run the project
 ```bash
 flutter pub get
 flutter run
-````
+For iOS:
 
-iOS için:
+Bash
 
-```bash
 cd ios
 pod install
 cd ..
-```
 
----
-
-## 📁 Proje Yapısı
-
-```text
+📁 Project Structure
 lib/
 ├── core/
 │   └── constant/
-│       ├── api_constant.dart           # API URL sabitleri
-│       └── image_constant.dart         # Varsayılan görsel URL sabitleri
+│       ├── api_constant.dart           # API URL constants
+│       └── image_constant.dart         # Default image URL constants
 │
 ├── data/
 │   ├── models/
-│   │   ├── character.dart              # Karakter modeli
-│   │   └── wand.dart                   # Asa modeli
+│   │   ├── character.dart              # Character model
+│   │   └── wand.dart                   # Wand model
 │   │
 │   ├── providers/
-│   │   └── character_provider.dart     # Provider (state yönetimi)
+│   │   └── character_provider.dart     # Provider (state management)
 │   │
 │   └── services/
-│       └── api_service.dart            # API servis işlemleri
+│       └── api_service.dart            # API service operations
 │
 ├── ui/
 │   ├── screens/
-│   │   └── character_list_screen.dart  # Ana karakter liste ekranı
+│   │   └── character_list_screen.dart  # Main character list screen
 │   │
 │   └── widgets/
-│       ├── character_grid_card.dart    # Desktop için karakter kartı
-│       ├── character_images.dart       # Görsel yükleyici widget
-│       └── character_list_card.dart    # Mobile için karakter kartı
+│       ├── character_grid_card.dart    # Character card for Desktop
+│       ├── character_images.dart       # Image loader widget
+│       └── character_list_card.dart    # Character card for Mobile
 │
-└── main.dart                           # Uygulamanın giriş noktası
-```
+└── main.dart                           # Application entry point
 
----
+🌐 API Source
+Data is fetched from: 🔗 hp-api.onrender.com/api/characters
 
-## 🌐 API Kaynağı
-
-Veriler şu adresten alınmaktadır:
-🔗 [hp-api.onrender.com/api/characters](https://hp-api.onrender.com/api/characters)
-
----
-
-
-## 📄 Lisans
-
-MIT © 2025 – \[Halil İbrahim KESKİN]
-
-```
+📄 License
+MIT © 2025 – [Halil İbrahim KESKİN]
